@@ -14,27 +14,27 @@ import EditPost from './routes/EditPost/EditPost.jsx';
 
 const router = createBrowserRouter([
   {
-    path:"/blog-com-axios",
+    path:"/blog-com-axios/",
     element:<App/>,
     children:[
       {
-        path: "/",
+        path: "",
         element: <Home/>,
       },
       {
-        path: "/new",
+        path: "new",
         element: <NewPost/>,
       },
       {
-        path:"/posts/:id",
+        path:"posts/:id",
         element: <Post/>,
       },
       {
-        path:"/admin",
+        path:"admin",
         element: <Admin/>,
       },
       {
-        path:"/posts/edit/:id",
+        path:"posts/edit/:id",
         element: <EditPost/>,
       },
     ],
