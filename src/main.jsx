@@ -17,23 +17,23 @@ const router = createBrowserRouter([
     element:<App/>,
     children:[
       {
-        path: "/",
+        path: "/blog-com-axios/",
         element: <Home/>,
       },
       {
-        path: "/new",
+        path: "/blog-com-axios/new",
         element: <NewPost/>,
       },
       {
-        path:"/posts/:id",
+        path:"/blog-com-axios/posts/:id",
         element: <Post/>,
       },
       {
-        path:"/admin",
+        path:"/blog-com-axios/admin",
         element: <Admin/>,
       },
       {
-        path:"/posts/edit/:id",
+        path:"/blog-com-axios/posts/edit/:id",
         element: <EditPost/>,
       },
     ],
