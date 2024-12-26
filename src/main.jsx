@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-import {createBrowserRouter, RouterProvider, Route} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 //paginas
 import Home from './routes/Home/Home.jsx';
@@ -14,35 +14,36 @@ import EditPost from './routes/EditPost/EditPost.jsx';
 
 const router = createBrowserRouter([
   {
-    path:"/blog-com-axios/",
-    element:<App/>,
-    children:[
+    element: <App />,
+    children: [
       {
-        path: "",
-        element: <Home/>,
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/new",
-        element: <NewPost/>,
+        element: <NewPost />,
       },
       {
-        path:"/posts/:id",
-        element: <Post/>,
+        path: "/posts/:id",
+        element: <Post />,
       },
       {
-        path:"/admin",
-        element: <Admin/>,
+        path: "/admin",
+        element: <Admin />,
       },
       {
-        path:"/posts/edit/:id",
-        element: <EditPost/>,
+        path: "/posts/edit/:id",
+        element: <EditPost />,
       },
     ],
   },
-]);
+],
+  { basename: "/blog-com-axios" }
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )
