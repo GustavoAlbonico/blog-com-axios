@@ -14,6 +14,7 @@ import EditPost from './routes/EditPost/EditPost.jsx';
 
 const router = createBrowserRouter([
   {
+    path:"/blog-com-axios",
     element:<App/>,
     children:[
       {
