@@ -22,19 +22,19 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "new",
+        path: "/new",
         element: <NewPost/>,
       },
       {
-        path:"posts/:id",
+        path:"/posts/:id",
         element: <Post/>,
       },
       {
-        path:"admin",
+        path:"/admin",
         element: <Admin/>,
       },
       {
-        path:"posts/edit/:id",
+        path:"/posts/edit/:id",
         element: <EditPost/>,
       },
     ],
